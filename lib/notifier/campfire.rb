@@ -19,7 +19,9 @@ module Integrity
     private
       def room
         @room ||= begin
-          campfire = Tinder::Campfire.new(config['account'])
+          options = {}
+          options[:ssl] = config['use_ssl'] ? true : false
+          campfire = Tinder::Campfire.new(config['account'], options)
           campfire.login(config['user'], config['pass'])
           campfire.find_room_by_name(config['room'])
         end
