@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
-  s.name              = 'integrity-campfire'
-  s.version           = '1.1.0'
-  s.date              = '2009-3-26'
+  s.name              = 'pritchie-integrity-campfire'
+  s.version           = '1.1.1'
+  s.date              = '2009-4-30'
   s.summary           = 'Campfire notifier for the Integrity continuous integration server'
   s.description       = 'Easily let Integrity alert Campfire after each build'
   s.homepage          = 'http://integrityapp.com'
   s.email             = 'chris@ozmm.org'
-  s.authors           = ['Chris Wanstrath']
+  s.authors           = ['Chris Wanstrath', 'Patrick Ritchie']
   s.has_rdoc          = false
   s.files             = %w( README.markdown lib/notifier/config.haml lib/notifier/campfire.rb )
 
